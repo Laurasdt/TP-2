@@ -10,16 +10,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpeg" href="/assets/Favicon.jpg?vh=2" />
     <title>La carte aux trésors</title>
   </head>
   <body>
     <header>
       <img src="./assets/la carte aux trésors.jpg" alt="Carte pirate" />
       <h1>La carte aux trésors</h1>
+      <h2>Culture pirate et évenements dans toute la France !</h2>
       <nav>
         <a href="#">Accueil</a>
         <a href="#">Evenements</a>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
     <main>
@@ -38,17 +40,62 @@
       <div class="card">
       <article>
         <h2>Comment devenir pirate</h2>
-        <p>Les bateaux pirates, symboles d'aventure et de liberté, sillonnent les mers tumultueuses, arborant fièrement leurs voiles noires et leurs drapeaux à tête de mort. Leurs équipages intrépides, menés par des capitaines légendaires, pillent et défient les navires marchands, naviguant vers l'horizon à la recherche de trésors perdus et de renommée éternelle.</p>
+        <p>Pour devenir pirate, embrassez l'esprit de l'aventure et de la liberté. Apprenez la navigation, l'art de manier l'épée et le tir au pistolet. Trouvez un équipage ou formez le vôtre. Explorez les mers, recherchez des trésors et défiez l'autorité. Mais souvenez-vous, être pirate signifie vivre sans règles, prêt à affronter les dangers et les conséquences.</p>
         <img
           src="./assets/Real_pirate.jpg"
           alt="Illustration devenir un pirate"
         />
       </article>
     </div>
+    <div class="card">
+        <article>
+          <h2>Côté mode</h2>
+          <p>La mode pirate de l'époque était audacieuse et iconique, mêlant des éléments de fantaisie et de fonctionnalité. Des chemises à jabot aux vestes brodées, chaque tenue était ornée de détails évoquant l'aventure en haute mer. Les tricornes, les ceintures à boucles et les bottes hautes complétaient le look, exprimant la liberté et l'intrépidité des pirates.</p>
+          <img
+            src="./assets/pirate_mode.jpg"
+            alt="bateau pirate"
+          />
+          </article>
+          </div>
+        </article>
+        <div class="card">
+        <article>
+          <h2>DIY pirate</h2>
+          <p>Plongez dans l'aventure avec notre guide captivant sur les projets DIY à thème pirate. Explorez des idées créatives pour transformer votre espace en repaire de corsaire, des costumes épiques aux décorations de navires. Découvrez comment donner vie à votre passion pour l'océan et l'intrépidité à travers des projets simples et amusants.</p>
+          <img
+            src="./assets/diy_pirate.jpg"
+            alt="Illustration devenir un pirate"
+          />
+        </article>
+      </div>
 </div>
+<form action="mailto:contact@lacarteauxtresors.com" method="post" enctype="text/plain">
+    <h2 id="contact">Contact</h2>
+    <div class="label-input">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="label-input">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="label-input">
+        <label for="phone">Téléphone:</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+
+    <div class="label-input comment">
+        <label for="comments">Commentaire:</label>
+        <textarea id="comments" name="comments" required></textarea>
+    </div>
+
+    <input type="submit" class="submit-button" value="Envoyer">
+</form>
     </main>
         <footer>
-            <p><address>14 avenue du Pirate</address></p>
+            <p><address>14 avenue Sparrow, Tobago Cays </address></p>
             <p>&copy; 2024 La Piraterie. Tous droits réservés.</p>
         </footer>
   </body>
